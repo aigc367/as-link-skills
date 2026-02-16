@@ -18,12 +18,18 @@ npm install -D typescript @types/node
 ## 使用例
 
 ```bash
-# TypeScriptコンパイラ初期化
+# tsconfig.json生成
 npx tsc --init
 
-# TypeScriptファイルをコンパイル
+# TypeScriptコンパイル（全ファイル）
 npx tsc
 
-# TypeScriptファイルを直接実行
-npx tsx script.ts
+# 特定ファイルをコンパイル
+npx tsc src/index.ts
+
+# Watch モード
+npx tsc --watch
+
+# TypeScriptファイルを直接実行（tsx使用）
+npx tsx src/script.ts
 ```
