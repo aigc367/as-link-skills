@@ -18,11 +18,19 @@ npx shadcn@latest init
 ## 使用例
 
 ```bash
-# コンポーネント追加
+# 個別コンポーネント追加
 npx shadcn@latest add button
 npx shadcn@latest add card
 npx shadcn@latest add dialog
+npx shadcn@latest add input
+npx shadcn@latest add label
+npx shadcn@latest add textarea
+npx shadcn@latest add select
+npx shadcn@latest add badge
 
-# 全コンポーネント追加
-npx shadcn@latest add --all
+# 複数同時追加
+npx shadcn@latest add button card dialog
+
+# 利用可能なコンポーネント一覧
+npx shadcn@latest add
 ```
