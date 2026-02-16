@@ -19,12 +19,17 @@ npx tailwindcss init -p
 ## 使用例
 
 ```bash
-# Tailwind設定ファイル生成
-npx tailwindcss init
+# tailwind.config.jsとpostcss.config.js生成
+npx tailwindcss init -p
 
-# CSSビルド（開発時）
+# CSSファイルに追加
+# @tailwind base;
+# @tailwind components;
+# @tailwind utilities;
+
+# ビルド（開発モード・Watch）
 npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 
-# CSSビルド（本番）
+# ビルド（本番・圧縮）
 npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify
 ```
