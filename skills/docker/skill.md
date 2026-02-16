@@ -12,28 +12,51 @@ tags: []
 ## インストール
 
 ```bash
-# macOS
-brew install docker
+# macOS (Docker Desktop)
+brew install --cask docker
 
-# Ubuntu
-sudo apt-get install docker.io
+# Ubuntu/Debian
+sudo apt-get update
+sudo apt-get install docker.io docker-compose
+
+# インストール確認
+docker --version
+docker-compose --version
 ```
 
 ## 使用例
 
 ```bash
-# イメージビルド
-docker build -t myapp .
+# Dockerfileからイメージビルド
+docker build -t myapp:latest .
 
 # コンテナ起動
-docker run -p 3000:3000 myapp
+docker run -d -p 3000:3000 --name myapp myapp:latest
 
-# コンテナ一覧
+# 起動中のコンテナ一覧
 docker ps
+
+# 全てのコンテナ一覧（停止中含む）
+docker ps -a
 
 # イメージ一覧
 docker images
 
+# コンテナのログ確認
+docker logs myapp
+
+# コンテナに入る
+docker exec -it myapp /bin/bash
+
+# コンテナ停止
+docker stop myapp
+
+# コンテナ削除
+docker rm myapp
+
 # Docker Compose起動
 docker-compose up -d
+
+# Docker Compose停止
+docker-compose down
 ```
