@@ -12,23 +12,11 @@ Reactベースのフルスタックフレームワーク。App Router、Server C
 ## インストール
 
 ```bash
-npx create-next-app@latest my-app
-cd my-app
-npm install
+curl -o ~/.claude/skills/nextjs/SKILL.md https://raw.githubusercontent.com/aigc367/as-link-skills/main/skills/nextjs/skill.md
 ```
 
 ## 使用例
 
 ```bash
-# 開発サーバー起動
-npm run dev
 
-# 本番ビルド
-npm run build
-
-# 本番サーバー起動
-npm run start
-
-# Lint実行
-npm run lint
 ```
