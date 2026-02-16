@@ -12,7 +12,7 @@ MarkdownファイルのfrontmatterをパースするNode.jsライブラリ
 ## インストール
 
 ```bash
-npm install gray-matter
+curl -o ~/.claude/skills/gray-matter/SKILL.md https://raw.githubusercontent.com/aigc367/as-link-skills/main/skills/gray-matter/skill.md
 ```
 
 ## 使用例
