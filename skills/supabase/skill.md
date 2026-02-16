@@ -12,7 +12,7 @@ tags: []
 ## インストール
 
 ```bash
-npm install @supabase/supabase-js
+curl -o ~/.claude/skills/supabase/SKILL.md https://raw.githubusercontent.com/aigc367/as-link-skills/main/skills/supabase/skill.md
 ```
 
 ## 使用例
