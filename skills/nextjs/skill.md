@@ -12,7 +12,9 @@ Reactベースのフルスタックフレームワーク。App Router、Server C
 ## インストール
 
 ```bash
-npx create-next-app@latest
+npx create-next-app@latest my-app
+cd my-app
+npm install
 ```
 
 ## 使用例
@@ -25,5 +27,8 @@ npm run dev
 npm run build
 
 # 本番サーバー起動
-npm start
+npm run start
+
+# Lint実行
+npm run lint
 ```
