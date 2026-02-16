@@ -12,24 +12,11 @@ tags: []
 ## インストール
 
 ```bash
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
+curl -o ~/.claude/skills/tailwindcss/SKILL.md https://raw.githubusercontent.com/aigc367/as-link-skills/main/skills/tailwindcss/skill.md
 ```
 
 ## 使用例
 
 ```bash
-# tailwind.config.jsとpostcss.config.js生成
-npx tailwindcss init -p
 
-# CSSファイルに追加
-# @tailwind base;
-# @tailwind components;
-# @tailwind utilities;
-
-# ビルド（開発モード・Watch）
-npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
-
-# ビルド（本番・圧縮）
-npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify
 ```
