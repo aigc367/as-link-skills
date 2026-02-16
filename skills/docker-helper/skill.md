@@ -12,7 +12,7 @@ Dockerコンテナとイメージを管理するためのヘルパースキル
 ## インストール
 
 ```bash
-npx skills add docker-helper
+curl -o ~/.claude/skills/docker-helper/SKILL.md https://raw.githubusercontent.com/aigc367/as-link-skills/main/skills/docker-helper/skill.md
 ```
 
 ## 使用例
