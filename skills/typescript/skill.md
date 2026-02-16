@@ -12,24 +12,11 @@ JavaScriptに型システムを追加したプログラミング言語。型安�
 ## インストール
 
 ```bash
-npm install -D typescript @types/node
+curl -o ~/.claude/skills/typescript/SKILL.md https://raw.githubusercontent.com/aigc367/as-link-skills/main/skills/typescript/skill.md
 ```
 
 ## 使用例
 
 ```bash
-# tsconfig.json生成
-npx tsc --init
 
-# TypeScriptコンパイル（全ファイル）
-npx tsc
-
-# 特定ファイルをコンパイル
-npx tsc src/index.ts
-
-# Watch モード
-npx tsc --watch
-
-# TypeScriptファイルを直接実行（tsx使用）
-npx tsx src/script.ts
 ```
